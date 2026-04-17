@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST Countries API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Países</h1>
+        <p class="subtitle">Consulta información usando REST Countries API</p>
+        
+        <div class="search-box">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Nombre del país (ej: Colombia, España)"
+                autocomplete="off"
+            >
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            Cargando...
+        </div>
+
+        <div id="results" class="results"></div>
+        <div id="error" class="error"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

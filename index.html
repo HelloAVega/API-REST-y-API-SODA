@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Consultas a APIs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        .card-body h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .card-body p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 3px solid #0066cc;
+        }
+
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .features li {
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .features li:before {
+            content: "- ";
+            font-weight: bold;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            cursor: pointer;
+            border: none;
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: #0052a3;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Proyectos de Consultas a APIs</h1>
+            <p>Ejemplos simples de consumo de APIs REST y SODA</p>
+        </div>
+
+        <div class="projects">
+            <!-- Proyecto 1: REST Countries -->
+            <div class="project-card">
+                <div class="card-body">
+                    <h2>REST Countries</h2>
+                    <p>Buscador de países usando la API de REST Countries.</p>
+                    
+                    <div class="features">
+                        <ul>
+                            <li>Búsqueda de países por nombre</li>
+                            <li>Muestra información del país</li>
+                            <li>Capital, región, población, idiomas, área</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>URL API:</strong><br><code>https://restcountries.com/v3.1/name/{nombre}</code></p>
+                    
+                    <a href="API REST/index.html" class="btn">Abrir Proyecto 1</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: API SODA Colombia -->
+            <div class="project-card">
+                <div class="card-body">
+                    <h2>Barrios de Barranquilla - API SODA</h2>
+                    <p>Consulta barrios de Barranquilla desde el portal de datos abiertos de Colombia.</p>
+                    
+                    <div class="features">
+                        <ul>
+                            <li>Visualización de todos los barrios</li>
+                            <li>Búsqueda por nombre o localidad</li>
+                            <li>Información de ID, localidad y pieza urbana</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>URL API:</strong><br><code>https://www.datos.gov.co/resource/qui6-qeux.json</code></p>
+                    
+                    <a href="API SODA/index.html" class="btn">Abrir Proyecto 2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Proyectos educativos para aprender sobre consumo de APIs REST</p>
+        </div>
+    </div>
+</body>
+</html>
