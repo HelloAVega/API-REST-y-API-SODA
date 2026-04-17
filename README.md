@@ -1,5 +1,7 @@
 # Proyectos de Consultas a APIs
 
+<img src="https://github.com/HelloAVega/API-REST-y-API-SODA/blob/main/Imagenes/Consultas%20a%20APIs.png">
+
 Este repositorio contiene dos proyectos:
 - **REST Countries**: Consultar información de países
 - **API SODA Colombia**: Consultar datos de barrios de Barranquilla
@@ -7,6 +9,8 @@ Este repositorio contiene dos proyectos:
 ---
 
 ## Proyecto 1: REST Countries
+
+<img src="https://github.com/HelloAVega/API-REST-y-API-SODA/blob/main/Imagenes/Paises.png">
 
 ### Descripción
 Buscador de países usando la API de REST Countries. Permite consultar información completa de cualquier país del mundo.
@@ -62,6 +66,8 @@ data.forEach(pais => {
 ---
 
 ## Proyecto 2: API SODA Colombia
+
+<img src="https://github.com/HelloAVega/API-REST-y-API-SODA/blob/main/Imagenes/Barrios.png">
 
 ### Descripción
 Explorador de barrios de Barranquilla usando el portal de Datos Abiertos de Colombia (SODA).
