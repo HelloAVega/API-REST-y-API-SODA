@@ -43,7 +43,7 @@ https://restcountries.com/v3.1/name/colombia
   },
   "capital": ["Bogotá"],
   "region": "Americas",
-  "population": 52085168,
+  "population": 53057212,
   "languages": {"spa": "Spanish"},
   "area": 1141748,
   "flags": {"png": "https://..."}
